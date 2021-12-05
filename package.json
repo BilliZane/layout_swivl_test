@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel src/index.html --open",
-    "deploy": ""
+    "build": "parcel build src/index.html --public-url ./",
+    "deploy": "gh-pages -d deploy"
   },
+  "homepage": "./",
   "keywords": [],
   "author": "",
   "license": "ISC",
