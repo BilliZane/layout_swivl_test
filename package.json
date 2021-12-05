@@ -1,0 +1,17 @@
+{
+  "name": "layout_swivl_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html --open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.37.5"
+  }
+}

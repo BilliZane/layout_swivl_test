@@ -1,0 +1,8 @@
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @media (min-width: calc(1175px + 30px)) {
+    max-width: 1205px;
+  }
+}
