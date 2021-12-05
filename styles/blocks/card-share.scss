@@ -1,0 +1,188 @@
+.card-share {
+  max-width: 374px;
+  min-width: 236px;
+
+  background: #fff;
+  color: $colorCardShare;
+
+  border-radius: 8px;
+  padding: 30px 24px 24px;
+
+  @media (max-width: 1022px) {
+    padding: 15px 10px 15px;
+  }
+
+  @media (max-width: 890px) {
+    max-width: none;
+  }
+
+  @media (max-width: 625px) {
+    max-width: 350px;
+  }
+
+  &__text {
+    font-family: 'MontserratRegular', sans-serif;
+    font-size: $fszCardShare1;
+    line-height: 44px;
+
+    @media (max-width: 1022px) {
+      font-size: $fszCardShare3;
+      line-height: 30px;
+    }
+  }
+
+  &__title-tag {
+    font-family: 'OpenSansSemibold', sans-serif;
+    font-size: $fszCardShare5;
+    line-height: 19px;
+
+    @media (max-width: 625px) {
+      font-size: $fszCardShare5;
+    }
+
+    @media (min-width: 890px) {
+      font-size: $fszCardShare7;
+      letter-spacing: -0.5px;
+    }
+
+    @media (min-width: 985px) {
+      font-size: $fszCardShare5;
+      letter-spacing: 0;
+    }
+
+    @media (min-width: 1023px) {
+      font-size: $fszCardShare6;
+      letter-spacing: -0.5px;
+    }
+
+    padding: 14px 0 10px;
+
+    & span {
+      display: inline-block;
+      background: #ECF1F8;
+      border-radius: 6px;
+      padding: 4px;
+    }
+  }
+
+  &__title-link {
+    display: flex;
+    align-items: center;
+
+    font-family: 'OpenSansSemibold', sans-serif;
+    font-size: $fszCardShare7;
+    line-height: 19px;
+
+    padding: 14px 0 13px;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      min-width: 18px;
+      min-height: 18px;
+
+      background-image: url('../images/card-share/card-share-title-link.svg');
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      margin-right: 8px;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icons-item {
+    font-family: 'OpenSansSemibold', sans-serif;
+    font-size: $fszCardShare7;
+    line-height: 16px;
+
+    display: flex;
+    align-items: center;
+
+    margin-right: 16px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &-views::before {
+      content: '';
+      display: inline-block;
+
+      min-width: 16px;
+      min-height: 16px;
+
+      background-image: url('../images/card-share/card-share-icons-item-views.svg');
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      margin-right: 8px;
+    }
+
+    &-likes::before {
+      content: '';
+      display: inline-block;
+      min-width: 16px;
+      min-height: 14px;
+
+      background-image: url('../images/card-share/card-share-icons-item-likes.svg');
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      margin-right: 8px;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 46px;
+
+    @media (max-width: 1100px) {
+      padding-top: 30px;
+    }
+  }
+
+  &__name {
+    display: flex;
+    align-items: center;
+
+    font-family: 'OpenSansSemibold', sans-serif;
+    font-size: $fszCardShare7;
+    line-height: 16px;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      min-width: 24px;
+      min-height: 24px;
+
+      background-image: url('../images/card-share/card-share-name-before.svg');
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      margin-right: 8px;
+
+      @media (max-width: 625px) {
+        min-width: 16px;
+        min-height: 16px;
+      }
+    }
+  }
+
+  &__link {
+    font-family: 'OpenSansRegular', sans-serif;
+    font-size: $fszCardShare4;
+    line-height: 16px;
+    color: $colorCardShareLink;
+  }
+}

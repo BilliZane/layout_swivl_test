@@ -1,0 +1,31 @@
+@import './reset';
+
+@import './utils/vars';
+@import './fonts';
+
+@import './blocks/container';
+@import './blocks/header';
+@import './blocks/card';
+@import './blocks/content';
+@import './blocks/posts';
+@import './blocks/card-share';
+@import './blocks/toggle-switch';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: $colorBgBody;
+  color: $colorBody;
+
+  font-size: $fszBodySm;
+
+  @media (max-width: 350px) {
+    font-size: $fszBodyMd;
+  }
+}
