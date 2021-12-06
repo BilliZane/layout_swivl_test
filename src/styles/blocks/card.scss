@@ -18,7 +18,7 @@
 
     padding-right: 48px;
 
-    @media (max-width: 350px) {
+    @media (max-width: 625px) {
       padding-right: 20px;
     }
 
@@ -29,7 +29,6 @@
 
   &__avatar {
     height: 100%;
-    padding-right: 24px;
   }
 
   &__open-info {
@@ -38,7 +37,11 @@
 
     position: absolute;
     top: 5px;
-    right: -5px;
+    right: 10px;
+
+    @media (max-width: 625px) {
+      right: 30px;
+    }
 
     &:hover {
       cursor: pointer;
