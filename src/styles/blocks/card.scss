@@ -2,6 +2,10 @@
   min-width: 350px;
   flex: 0 1 30%;
 
+  @media (max-width: 625px) {
+    padding: 0 15px;
+  }
+
   @media (max-width: 350px) {
     min-width: 330px;
   }
@@ -39,8 +43,8 @@
     top: 5px;
     right: 10px;
 
-    @media (max-width: 625px) {
-      right: 30px;
+    @media (min-width: 1023px) {
+      right: 0;
     }
 
     &:hover {
